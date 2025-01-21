@@ -1,5 +1,5 @@
 {
-  "name": "Ecommerce-app",
+  "name": "c",
   "version": "1.0.0",
   "description": "ecommerce rest api",
   "main": "server.js",
@@ -29,5 +29,14 @@
     "nodemon": "^2.0.22",
     "react-icons": "^4.12.0",
     "slugify": "^1.6.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/Kushwahadheeraj.git"
+  },
+  "bugs": {
+    "url": "https://github.com/github.com/Kushwahadheeraj/issues"
+  },
+  "homepage": "https://github.com/github.com/Kushwahadheeraj#readme"
 }
