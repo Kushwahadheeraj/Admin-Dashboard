@@ -12,7 +12,7 @@ const Products = () => {
 const [categories, setCategories] = useState([]);     
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/v1/category/get-category");
+      const { data } = await axios.get("https://admin-dashboard-backend-tz1k.onrender.com/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
@@ -29,7 +29,7 @@ const [categories, setCategories] = useState([]);
   //getall products
   const getAllProducts = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:8080/api/v1/product/get-product`);
+      const { data } = await axios.get(`https://admin-dashboard-backend-tz1k.onrender.com/api/v1/product/get-product`);
       setProducts(data.products);
     } catch (error) {
       console.log(error);
@@ -43,7 +43,7 @@ const [categories, setCategories] = useState([]);
     if (!confirmDelete) return;
    
     try {
-      await axios.delete(`http://localhost:8080/api/v1/product/delete-product/${productId}`);
+      await axios.delete(`https://admin-dashboard-backend-tz1k.onrender.com/api/v1/product/delete-product/${productId}`);
       toast.success("Product deleted successfully.");
       setProducts((prev) => prev.filter((product) => product._id !== productId)); // Update UI without refetching
     } catch (error) {
@@ -74,7 +74,7 @@ const [categories, setCategories] = useState([]);
                   <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Photo</th>
-                    <th scope="col">Category</th>
+                    {/* <th scope="col">Category</th> */}
                     <th scope="col">Price</th>
                     <th scope="col">Quantity</th>
                     <th scope="col">Actions</th>
@@ -89,18 +89,18 @@ const [categories, setCategories] = useState([]);
                      <div className="w-2 h-2">
                      <img
                       // src={p.photo}
-                      src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                      src={`https://admin-dashboard-backend-tz1k.onrender.com/api/v1/product/product-photo/${p._id}`}
                       alt="product_image"
                       className=""
                       style={{ width: "100px", height: "50px" }}
                     />
                      </div>
                   </td>
-                  {categories?.map((c) => (
+                  {/* {categories?.map((c) => (
                   <td key={c._id} value={c._id}>
                     {c.name}
                   </td>
-                ))}
+                ))} */}
                         <td key={p._id}>{p.price}</td>
                         <td key={p._id}>{p.quantity}</td>
                         <td>
