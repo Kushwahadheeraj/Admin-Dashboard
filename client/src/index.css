@@ -142,3 +142,165 @@
   color: white;
   padding: 20px 0px;
 }
+
+
+
+/* General table responsiveness */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Adjust image sizes for smaller screens */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Adjust padding/margins for mobile devices */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .col-md-3 {
+    margin-bottom: 20px;
+  }
+
+  .table th, .table td {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+}
+/* AdminMenu Styling */
+.dashboard-menu {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Center text and adjust padding */
+.dashboard-menu h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Reduce padding and font size on smaller screens */
+@media (max-width: 768px) {
+  .dashboard-menu {
+    width: 100%;
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .dashboard-menu h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Highlight active links */
+.list-group-item.active {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+/* AdminDashboard Styling */
+.dashboard {
+  padding: 20px;
+}
+
+/* Adjust card spacing and font size for smaller screens */
+@media (max-width: 768px) {
+  .dashboard .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .dashboard h3 {
+    font-size: 1rem;
+  }
+
+  .dashboard .fw-bold {
+    font-size: 1.1rem;
+  }
+}
+
+/* Adjust menu width for smaller screens */
+@media (max-width: 992px) {
+  .dashboard .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .dashboard .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.form-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-select {
+  width: 100%;
+}
+
+.btn-outline-secondary {
+  width: 100%;
+}
+
+.img-responsive {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+  
+  .btn-outline-secondary {
+    padding: 10px;
+  }
+
+  .form-select {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .w-75 {
+    width: 100%;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-select {
+    width: 100%;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}
+
+
